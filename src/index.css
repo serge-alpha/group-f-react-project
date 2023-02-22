@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: grid;
+    grid-template-areas:
+        'head'
+        'slide'
+        'conten'
+        'footer';
+}
+
+.App__header {
+    grid-area: head;
+    background-color: aquamarine;
+    height: 30vh;
+    width:;
+}
+
+.slider {
+    grid-area: slide;
+    background-color: blue;
+    height: 20vh;
+}
+
+.App__product {
+    grid-area: conten;
+    background-color: antiquewhite;
+    height: 110vh;
+}
+
+.nav {
+    background: red;
+    width: 70rem;
+    position: relative;
+    top: -1rem;
+    border-radius: 0.5rem;
+    height: 4.5rem;
+    margin: auto;
+}
+
+.App__footer {
+    grid-area: footer;
+    background-color: burlywood;
+    height: 35vh;
+    width: 100%;
+}
