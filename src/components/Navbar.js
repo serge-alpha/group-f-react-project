@@ -10,9 +10,8 @@ const Navbar = () => {
           <li className='nav__link'><a href='/'src='/'>About</a></li>
           <li className='nav__link'><a href='/'src='/'>Contact Us</a></li>
           <li className='nav__link'><a href='/'src='/'>Register</a></li>
-         
         </ul>
-        </nav>
+       </nav>
     );
   };
 
