@@ -2,11 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./index.css";
 
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
+
 import Header from "./components/Header";
-import Slider from "./components/Slider";
+import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -34,12 +38,14 @@ const App = () => {
       });
   }, []);
   return (
-    <div className="app">
-      <Navbar />
+      <div className="app">
+          <Navbar/>
       <Header />
+
       <Slider />
       {isLoading && <p>the products are loading...</p>}
       {error ? <p>{error}</p> : <Products products={products} />}
+
       <Footer />
     </div>
   );
