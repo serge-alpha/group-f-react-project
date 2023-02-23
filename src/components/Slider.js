@@ -1,12 +1,14 @@
 import React from "react";
 
+
 const Slider = () => {
   return (
-    <header>
+    <main>
       <div className="slider">
-        <h1> SLIDER</h1>
+      <label for="search" className="label">Search: </label>
+        <input type='search' name="name" className="slider__search"></input>
       </div>
-    </header>
+    </main>
   );
 };
 
