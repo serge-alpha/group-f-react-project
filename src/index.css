@@ -118,12 +118,98 @@ nav {
 
 /* PRODUCTS ENDS HERE */
 /* FOOTER STARTS HERE */
-.app__footer {
-  grid-area: footer;
-  background-color: #6096b4;
-  height: 35vh;
-  width: 100%;
-}
-/* FOOTER ENDS HERE */
 
+
+.App__footer {
+    grid-area: footer;
+    background-color: #8faae2;
+    height: 100%;
+    width: 100%;
+}
+
+.footer__section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0rem 5rem;
+    padding-top:2rem;
+}
+
+.colm__row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0rem;
+    width: 9rem;
+    margin: 1rem;
+}
+
+.row__img {
+    width: 60px;
+    height: 70px;
+    object-fit: cover;
+    padding: 0;
+}
+
+.subscribe__btn {
+    background-color: antiquewhite;
+    border: none;
+    margin: 0rem;
+    height: 2rem;
+}
+
+#email {
+    border: none;
+    height: 2rem;
+    margin: 0rem;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+.bottom__link {
+    border-top: 2px solid #485164;
+    border-bottom: 2px solid #485164;
+    box-shadow: 0px 3px 10px #181c22;
+    padding: 1rem;
+    margin:0rem;
+}
+
+li, a, h5 {
+    text-decoration: none;
+    display: inline;
+    color: black;
+    padding: 0.5rem;
+}
+
+.dev__info {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    text-align:center;
+
+}
+
+
+/* FOOTER ENDS HERE */
+@media screen and (max-width: 1200px) {
+    .footer__section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+        .footer__section > h1 {
+            grid-column: 1/span 2;
+            margin: 2rem;
+            text-align: center;
+        }
+
+    .footer__colm {
+        text-align: center;
+    }
+
+    .form {
+        margin-top: 5rem;
+        grid-column: 1/span 2;
+    }
+}
 /* RESPONSIVNESS BELOW */
