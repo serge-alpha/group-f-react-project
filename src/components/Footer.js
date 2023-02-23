@@ -3,6 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
+
+     
+
       <div className="App__footer">
               <section class="footer__section">
                   <h1>Company Name</h1>
@@ -81,6 +84,7 @@ const Footer = () => {
                   </div>
               </section>
       </div>
+
     </footer>
   );
 };
