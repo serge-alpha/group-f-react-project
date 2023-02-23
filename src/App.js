@@ -7,12 +7,12 @@ import Products from './components/Products';
 import Header from './components/Header';
 import Slider from './components/Slider';
 
-function App() {
+const App =()=> {
   return (
       <div className="App">
           <Header className='App__header'/>
           <Slider className='slider'/>
-          <Products className='App__product'/ > 
+          <Products className='App__product'/> 
           <Footer className='App__footer' />
     </div>
   );
