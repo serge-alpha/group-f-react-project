@@ -62,7 +62,7 @@ const Footer = () => {
                       <p>Subscribe to get updates on the lastest trendy products</p>
                       <form>
                           <input type="email" name="email" id="email" placeholder="Enter Email" required="true" />
-                              <button type="submit" class="subscribe__btn">SUBSCRIBE</button>
+                              <button type="submit" class="btn">SUBSCRIBE</button>
                       </form>
                   </div>
               </section>

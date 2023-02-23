@@ -1,15 +1,18 @@
-// import React from "react";
+ import React from "react";
 
-// import Product from "./Products";
+import Product from "./Product";
+import Slider from "./Slider";
 
-// const Products = ({ products }) => {
-//   return (
-//     <section className="app__product">
-//       <h2> test</h2>
-//       <div className="nav"></div>
-//       <Product product={product} />
-//     </section>
-//   );
-// };
 
-// export default Products;
+
+const Products = ({ products }) => {
+  return (
+      <section className="app__product">
+          <Slider/>
+          <h2> test</h2>
+          <Product/>
+     </section>
+   );
+ };
+
+ export default Products;
