@@ -1,63 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .App {
-    display: grid;
-    grid-template-areas:
-        'head'
-        'slide'
-        'conten'
-        'footer';
+  display: grid;
+  grid-template-areas:
+    "head"
+    "slide"
+    "conten"
+    "footer";
 }
-
+body {
+  background-color: #bdcdd6;
+}
+/* HEADER - NAVBAR STARTS HERE */
 .App__header {
-    grid-area: head;
-    background-color: aquamarine;
-    height: 30vh;
-    width:;
+  grid-area: head;
+  background-color: #6096b4;
+  height: 30vh;
 }
-
-.slider {
-    grid-area: slide;
-    background-color: blue;
-    height: 20vh;
-}
-
-.App__product {
-    grid-area: conten;
-    background-color: antiquewhite;
-    height: 110vh;
-}
-
 .nav {
-    background: red;
-    width: 70rem;
-    position: relative;
-    top: -1rem;
-    border-radius: 0.5rem;
-    height: 4.5rem;
-    margin: auto;
+  background: #6096b4;
+  width: 70rem;
+  position: relative;
+  top: -1rem;
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  margin: auto;
+}
+/* HEADER - NAVBAR ENDS HERE */
+/* SLIDER STARTS HERE */
+.slider {
+  grid-area: slide;
+  background-color: #eee9da;
+  height: 20vh;
+}
+/* SLIDER ENDS HERE */
+/* PRODUCTS STARTS HERE */
+.App__product {
+  grid-area: conten;
+  background-color: #eee9da;
+  height: 110vh;
 }
 
+/* PRODUCTS ENDS HERE */
+/* FOOTER STARTS HERE */
 .App__footer {
-    grid-area: footer;
-    background-color: burlywood;
-    height: 35vh;
-    width: 100%;
+  grid-area: footer;
+  background-color: #6096b4;
+  height: 35vh;
+  width: 100%;
 }
+/* FOOTER ENDS HERE */
+
+/* RESPONSIVNESS BELOW */
