@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 
+
 const App = () => {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ const App = () => {
       <Slider />
       {/* <Products products={products} /> */}
       <Footer />
+
     </div>
   );
 };
