@@ -1,15 +1,20 @@
-// import React from "react";
 
-// import Product from "./Products";
+import React from "react";
+import Product from "./Product";
+import Slider from "./Slider";
 
-// const Products = ({ products }) => {
-//   return (
-//     <section className="app__product">
-//       <h2> test</h2>
-//       <div className="nav"></div>
-//       <Product product={product} />
-//     </section>
-//   );
-// };
+const Products = (props) => {
+  const { products } = props;
+  return (
+    <section className="products">
+          <Slider/>
+          <h2> test</h2>
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+    </section>
+  );
+};
 
-// export default Products;
+export default Products;
+
