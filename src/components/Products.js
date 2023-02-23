@@ -1,18 +1,20 @@
- import React from "react";
 
+import React from "react";
 import Product from "./Product";
 import Slider from "./Slider";
 
-
-
-const Products = ({ products }) => {
+const Products = (props) => {
+  const { products } = props;
   return (
-      <section className="app__product">
+    <section className="products">
           <Slider/>
           <h2> test</h2>
-          <Product/>
-     </section>
-   );
- };
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+    </section>
+  );
+};
 
- export default Products;
+export default Products;
+
