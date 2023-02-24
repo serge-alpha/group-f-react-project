@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import LoadingSpin from "./components/LoadingSpin";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -37,10 +38,9 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Header />
-      <Slider />
-      {isLoading && <p>the products are loading...</p>}
+      {/* <Slider /> */}
       {error ? <p>{error}</p> : <Products products={products} />}
-
+      {isLoading && <LoadingSpin />}
       <Footer />
     </div>
   );
