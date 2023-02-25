@@ -90,7 +90,7 @@ nav {
 }
 
 .container {
-  background-image: url("./photo/photos.jpg");
+  background-image: url("https://i.postimg.cc/W1d2kBrJ/photos.jpg");
   background-size: cover;
 }
 .centered {
@@ -113,12 +113,19 @@ nav {
   box-shadow: 0px 2px 5px;
   border-radius: 4px;
   padding: 2rem 4rem;
+  /* gap: 1rem; */
 }
+input[type="search"] {
+  padding: 17px;
+}
+input:focus {
+  outline: none;
+}
+
 .slider__search {
   width: 20rem;
   gap: 1rem;
   height: 2rem;
-
   border-radius: 4px;
 }
 .label {
@@ -139,23 +146,35 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
+}
+.product__price {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  padding-right: 1rem;
+  font-weight: bold;
 }
 .product__details {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  height: 15rem;
 }
+
 .product__img {
-  width: 50%;
+  width: 55%;
+  height: 60%;
   border-radius: 0.5rem;
   transition: all 0.5s;
+  align-self: center;
 }
+
 .product__img:hover {
   transform: scale(1.7);
 }
 .product__desc {
-  padding-bottom: 1rem;
+  overflow: hidden;
 }
 .products {
   display: grid;
@@ -177,36 +196,53 @@ nav {
   color: #6096b4;
   transition: all 1000ms;
   font-size: 15px;
+  outline: 2px solid #6096b4;
+  box-shadow: 2px 4px 10px #14445e;
+  position: relative;
+  align-self: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#search__btn {
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6096b4;
+  transition: all 1000ms;
+  font-size: 13px;
   overflow: hidden;
   outline: 2px solid #6096b4;
   box-shadow: 2px 4px 10px #14445e;
   position: relative;
-  align-self: self-end;
-  margin-top: auto;
 }
-
-.product__btn:hover {
+.product__btn:hover,
+#search__btn:hover {
   color: #e6ebee;
   transform: scale(1);
   outline: 2px solid #bdcdd6;
   box-shadow: 4px 5px 17px -4px #14445e;
 }
 
-.product__btn::before {
+.product__btn::before,
+#search__btn::before {
   content: "";
   position: absolute;
   left: -50px;
+  object-fit: contain;
   top: 0;
   width: 0;
   height: 100%;
   background-color: #6096b4;
-  transform: skewX(45deg);
+  transform: skewX(40deg);
   z-index: -1;
   transition: width 1000ms;
 }
 
-.product__btn:hover::before {
-  width: 250%;
+.product__btn:hover::before,
+#search__btn:hover::before {
+  width: 135%;
 }
 
 /* PRODUCTS ENDS HERE */
