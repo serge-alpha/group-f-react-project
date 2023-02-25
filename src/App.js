@@ -6,8 +6,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
+// import Slider from "./components/Slider";
 import Cart from "./components/Cart";
+import LoadingSpin from "./components/LoadingSpin";
+
 
 const App = () => {
     
@@ -51,10 +53,13 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Header />
-      <Slider />
+
+       {/* <Slider /> */}
           {isLoading && <p>the products are loading...</p>}
           {error ? <p>{error}</p> : <Products products={products} cartItem={AddToCart}  />}
+          {isLoading && <LoadingSpin />}
           <Cart items={cart} itemdelete={deleteItem}/>
+
       <Footer />
     </div>
   );
