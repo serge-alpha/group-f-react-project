@@ -5,9 +5,8 @@ const Footer = () => {
     <footer>
       <div className="App__footer">
         <section className="footer__section">
-          <h1>Company Name</h1>
+          <h1>Amaze Fashion</h1>
           <div className="footer__colm">
-            <h3>PRODUCTS</h3>
             <span className="colm__row">
               <img
                 src="https://i.postimg.cc/RFB6GSQY/Screenshot-47.png"
@@ -45,7 +44,6 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__colm">
-            <h3>PRODUCTS</h3>
             <span className="colm__row">
               <img
                 src="https://i.postimg.cc/3xzD4CyY/Screenshot-50.png"
@@ -90,10 +88,10 @@ const Footer = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter Email"
+                placeholder="Enter Email..."
                 required
               />
-              <button type="submit" className="btn">
+              <button type="submit" className="subscribe__btn">
                 SUBSCRIBE
               </button>
             </form>
@@ -128,12 +126,6 @@ const Footer = () => {
             <i class="fa-regular fa-copyright"></i> 2023 CREATED BY //RANDOM
             TEXT WHICH WILL BE ADDED IN FUTURE AN SO ON
           </h6>
-          {/* <div className="payment">
-            <i className="fa fa-cc-paypal" aria-hidden="true"></i>
-            <i className="fa fa-cc-mastercard" aria-hidden="true"></i>
-            <i className="fa fa-paypal" aria-hidden="true"></i>
-            <i className="fa fa-google-wallet" aria-hidden="true"></i>
-          </div> */}
         </section>
       </div>
     </footer>
