@@ -9,7 +9,7 @@ import Cart from "./components/Cart";
 import LoadingSpin from "./components/LoadingSpin";
 import Home from "./components/Home";
 import Register from "./pages/Register";
-
+import Error from './pages/Error';
 
 
 const App = () => {
@@ -50,7 +50,9 @@ const App = () => {
         setError(error.message);
       });
   }, []);
-    
+    const userinfo = (info) => {
+        console.log(info);
+    }
   return (
     <div className="app">
 
@@ -58,10 +60,12 @@ const App = () => {
               <Navbar items={cart }/>
               <Routes>
                   <Route path="/" element={<Home error={error} isLoading={isLoading} products={products} cartItem={AddToCart}  />}></Route>
-                  <Route path="/cart" element={<Cart items={cart} itemdelete={deleteItem} emptycart={EmptyCart } />}></Route>
+                  <Route path="/cart" element={<Cart items={cart} itemdelete={deleteItem} emptycart={EmptyCart} />}></Route>
+                  <Route path="/register" element={<Register userinfo={userinfo} />} />
+                  <Route path='*' element={<Error /> }></Route>
               </Routes>
           </BrowserRouter>
-      <Register />
+     
       <Footer />
     </div>
   );
