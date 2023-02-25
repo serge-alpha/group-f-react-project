@@ -6,14 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root {
+  --header: #99b898;
+  --footer: #2a363b;
+  --bars: #fecea8;
+  --cards: #a1a1a1;
+  --bodycolor: #b2b1b9;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Times New Roman", Times, serif;
 }
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .app {
@@ -25,7 +32,7 @@ code {
     "footer";
 }
 body {
-  background-color: #bdcdd6;
+  background-color: var(--bodycolor);
 }
 .btn {
   background-color: antiquewhite;
@@ -43,13 +50,12 @@ input {
 .app__header {
   display: grid;
   grid-area: head;
-  background-color: #6096b4;
+  background-color: var(--header);
   min-height: 40vh;
-  color: #2596be;
+  color: var(--footer);
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 2rem;
-  border: #6097b4;
 }
 
 .title {
@@ -57,22 +63,68 @@ input {
   margin: 0.5rem;
 }
 nav {
-  background-color: #6096b4;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
+  width: 50%;
+  height: 3rem;
   padding-top: 0.5rem;
   margin: auto;
-}
-.nav__links {
+  background-color: var(--bars);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  top: 2.5rem;
+  box-shadow: 0px 2px 5px;
+  border-radius: 4px;
+  padding: 2rem 4rem;
+}
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 2rem;
+  padding-top: 3rem;
+  height: 0.5rem;
+  align-items: center;
+}
+.navbar {
+  background-color: var(--header);
+}
+.navbar__topDetails {
+  display: flex;
+  align-items: center;
+}
+.navbar__cartDetails {
+  display: flex;
+  align-items: center;
+  grid-gap: 2rem;
+  width: 9rem;
+  margin: 1rem;
+}
+.nav__icon1 {
+  width: 5rem;
+  height: 4rem;
+  object-fit: scale-down;
+  padding: 0;
+  margin-right: 3rem;
+  border-right: 1px solid black;
+  float: left;
+}
+.nav__icon {
+  width: 6rem;
+  height: 6.5rem;
+  object-fit: scale-down;
+  padding: 0;
+  float: left;
+}
+.nav__links {
+  display: flex;
   cursor: pointer;
-  color: aliceblue;
+  /* color: aliceblue; */
   font-size: larger;
   text-align: center;
+  gap: 4rem;
+}
+#nav__link {
+  color: black;
 }
 
 .nav__link {
@@ -80,7 +132,7 @@ nav {
   gap: 0.5rem;
 }
 .nav__link:hover {
-  filter: drop-shadow(2px 2px 6px #14445e);
+  filter: drop-shadow(2px 2px 6px #545454);
 }
 
 .header__image {
@@ -90,7 +142,7 @@ nav {
 }
 
 .container {
-  background-image: url("https://i.postimg.cc/W1d2kBrJ/photos.jpg");
+  background-image: url("https://i.postimg.cc/rF9xN525/Screenshot-60.jpg");
   background-size: cover;
 }
 .centered {
@@ -100,8 +152,8 @@ nav {
 /* HEADER - NAVBAR ENDS HERE */
 /* SLIDER STARTS HERE */
 .slider {
-  background-color: #2596be;
-  height: 10vh;
+  background-color: var(--bars);
+  height: 7vh;
   max-height: 100%;
   display: flex;
   position: relative;
@@ -113,13 +165,16 @@ nav {
   box-shadow: 0px 2px 5px;
   border-radius: 4px;
   padding: 2rem 4rem;
-  /* gap: 1rem; */
 }
+
 input[type="search"] {
   padding: 17px;
 }
 input:focus {
   outline: none;
+}
+input::placeholder {
+  font-size: 1rem;
 }
 
 .slider__search {
@@ -137,8 +192,8 @@ input:focus {
 /* PRODUCTS STARTS HERE */
 
 .product {
-  background-color: #6096b4;
-  border: solid #6096b4;
+  background-color: var(--cards);
+  border: solid var(--cards);
   color: rgb(0, 0, 0);
   padding: 1rem;
   border-radius: 0.6rem;
@@ -170,9 +225,9 @@ input:focus {
   align-self: center;
 }
 
-.product__img:hover {
+/* .product__img:hover {
   transform: scale(1.7);
-}
+} */
 .product__desc {
   overflow: hidden;
 }
@@ -184,7 +239,7 @@ input:focus {
   margin-right: 15rem;
   gap: 1rem;
   padding: 2rem;
-  filter: drop-shadow(5px 5px 2px #14445e);
+  filter: drop-shadow(5px 5px 2px #626161);
 }
 
 .product__btn {
@@ -193,10 +248,10 @@ input:focus {
   border-radius: 5px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #6096b4;
+  color: var(--bars);
   transition: all 1000ms;
   font-size: 15px;
-  outline: 2px solid #6096b4;
+  outline: 2px solid var(--bars);
   box-shadow: 2px 4px 10px #14445e;
   position: relative;
   align-self: flex-end;
@@ -234,7 +289,7 @@ input:focus {
   top: 0;
   width: 0;
   height: 100%;
-  background-color: #6096b4;
+  background-color: var(--bars);
   transform: skewX(40deg);
   z-index: -1;
   transition: width 1000ms;
@@ -251,16 +306,17 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  justify-content: center;
   margin: 2rem auto;
-  background-color: ghostwhite;
+  background-color: var(--bodycolor);
   width: 60vw;
   border-radius: 4px;
   padding: 4rem;
-  min-height: 80vh;
+  min-height: 40vh;
 }
-
 .cart__item {
-  background-color: white;
+  background-color: var(--cards);
   padding: 1rem;
   display: grid;
   width: 100%;
@@ -269,6 +325,7 @@ input:focus {
   grid-template-columns: auto auto;
   height: fit-content;
   border-radius: 9px;
+  filter: drop-shadow(5px 5px 2px #626161);
 }
 
 .item__img {
@@ -277,7 +334,9 @@ input:focus {
   object-fit: scale-down;
   padding: 0;
   float: left;
+
 }
+
 
 .item__amount {
   margin-top: 1rem;
@@ -309,13 +368,24 @@ input:focus {
   border: none;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
+
+}
+.pay__btn {
+  background-color: darkslategrey;
+  border: none;
+  width: 10rem;
+}
+.add__btn {
+  background-color: none;
+  border: none;
+  width: 10rem;
 }
 /*CART ENDS HERE*/
 /* FOOTER STARTS HERE */
 
 .App__footer {
   grid-area: footer;
-  background-color: #6096b4;
+  background-color: var(--footer);
   height: 100%;
   width: 100%;
   margin-top: 3rem;
@@ -326,6 +396,7 @@ input:focus {
   grid-template-columns: repeat(4, 1fr);
   margin: 0rem 5rem;
   padding-top: 2rem;
+  color: var(--bodycolor);
 }
 
 .colm__row {
@@ -369,13 +440,16 @@ form {
   padding: 1rem;
   margin: 0rem;
 }
+#cart__link {
+  color: black;
+}
 
 li,
 a,
 h5 {
   text-decoration: none;
   display: inline;
-  color: black;
+  color: var(--bodycolor);
   padding: 0.5rem;
 }
 
@@ -384,6 +458,7 @@ h5 {
   justify-content: center;
   margin: 1rem;
   text-align: center;
+  color: var(--cards);
 }
 .footer_product_title {
   font-size: 14px;
@@ -437,8 +512,8 @@ h5 {
 @media screen and (max-width: 930px) {
   .slider {
     /* grid-area: slide; */
-    background-color: #2596be;
-    height: 10vh;
+    background-color: var(--bars);
+    height: 5vh;
     max-height: 100%;
     display: flex;
     position: initial;

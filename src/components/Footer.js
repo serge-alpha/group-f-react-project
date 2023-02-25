@@ -125,15 +125,15 @@ const Footer = () => {
         </section>
         <section className="dev__info">
           <h6>
-            &copy 2023 CREATED BY //RANDOM TEXT WHICH WILL BE ADDED IN FUTURE AN
-            SO ON
+            <i class="fa-regular fa-copyright"></i> 2023 CREATED BY //RANDOM
+            TEXT WHICH WILL BE ADDED IN FUTURE AN SO ON
           </h6>
-          <div className="payment">
+          {/* <div className="payment">
             <i className="fa fa-cc-paypal" aria-hidden="true"></i>
             <i className="fa fa-cc-mastercard" aria-hidden="true"></i>
             <i className="fa fa-paypal" aria-hidden="true"></i>
             <i className="fa fa-google-wallet" aria-hidden="true"></i>
-          </div>
+          </div> */}
         </section>
       </div>
     </footer>
