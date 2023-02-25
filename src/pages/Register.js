@@ -3,32 +3,43 @@ import React from 'react'
 const Register = () => {
   return (
     <div>
-      <form action="action_page.php">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
+           <section class="contact">
+    <h2 class="section-title text-center">Register Here</h2>
+    <div class="card">
+        <form action="" class="form">
+            <div class="form-control flex-center">
+                <label for="name">Name</label>
+                <input type="text" id="name" required autocomplete="name"/>
+            </div>
+     
+            <div class="form-control flex-center">
+                <label for="name">Contact Details</label>
+                <input type="text" id="name" required autocomplete="name"/>
+            </div>
     
+            <div class="form-control flex-center">
+                <label for="email">Email </label>
+                <input type="text" id="name" required autocomplete="name"/>
+                    
+               
+            </div>
+        
+                 <div class="form-control flex-center">
+                        <label for="name">Message</label>
+                        <input type="message" id="message"/>
+                      
+                       </div>
+                       <div class="form-control flex-center">
+                        <button class="btn">Submit</button>
+                          
+                  </div>
+            </form>
+          </div>
+ </section>
+ 
+</div>
+  );
+  };
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required />
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required />
-    
-
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-</form>
-    </div>
-  )
-};
 
 export default Register;

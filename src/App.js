@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import Register from "./pages/Register";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -40,7 +41,7 @@ const App = () => {
       <Slider />
       {isLoading && <p>the products are loading...</p>}
       {error ? <p>{error}</p> : <Products products={products} />}
-
+      <Register />
       <Footer />
     </div>
   );
