@@ -59,16 +59,47 @@ input {
 nav {
   background-color: #6096b4;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
+  height: 3rem;
+  align-items:center;
   padding-top: 0.5rem;
   margin: auto;
 }
+.navbar__top{
+    display:flex;
+    justify-content:space-between;
+    margin:0rem 2rem;
+    height:6rem;
+    align-items:center;
+}
+.navbar__topDetails{
+    display:flex;
+    align-items:center;
+}
+.navbar__cartDetails {
+    display:flex;
+    align-items:center;
+    grid-gap: 2rem;
+    width: 9rem;
+    margin: 1rem;
+}
+.nav__icon1 {
+    width: 5rem;
+    height: 4rem;
+    object-fit: scale-down;
+    padding: 0;
+    margin-right:3rem;
+    border-right:1px solid black;
+    float: left;
+}
+.nav__icon {
+    width: 6rem;
+    height: 6.5rem;
+    object-fit: scale-down;
+    padding: 0;
+    float: left;
+}
 .nav__links {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   cursor: pointer;
   color: aliceblue;
   font-size: larger;
@@ -101,7 +132,7 @@ nav {
 /* SLIDER STARTS HERE */
 .slider {
   background-color: #2596be;
-  height: 10vh;
+  height: 7vh;
   max-height: 100%;
   display: flex;
   position: relative;
@@ -215,12 +246,13 @@ nav {
     display: flex;
     flex-direction: column;
     gap:2rem;
+    justify-content:center;
     margin: 2rem auto;
     background-color: ghostwhite;
     width: 60vw;
     border-radius: 4px;
     padding: 4rem;
-    min-height: 80vh;
+    min-height: 40vh;
 }
 
 .cart__item {
@@ -275,6 +307,17 @@ nav {
     border: none;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
+}
+.pay__btn{
+    background-color:darkslategrey;
+    border:none;
+    width:10rem;
+}
+.add__btn {
+    background-color: none;
+    border: none;
+    width: 10rem;
+
 }
 /*CART ENDS HERE*/
 /* FOOTER STARTS HERE */
@@ -401,7 +444,7 @@ h5 {
   .slider {
     /* grid-area: slide; */
     background-color: #2596be;
-    height: 10vh;
+    height: 5vh;
     max-height: 100%;
     display: flex;
     position: initial;
