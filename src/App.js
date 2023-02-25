@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Cart from "./components/Cart";
 import LoadingSpin from "./components/LoadingSpin";
 import Home from "./components/Home";
+import Register from "./pages/Register";
+
 
 
 const App = () => {
@@ -51,6 +53,7 @@ const App = () => {
     
   return (
     <div className="app">
+
           <BrowserRouter>
               <Navbar items={cart }/>
               <Routes>
@@ -58,6 +61,7 @@ const App = () => {
                   <Route path="/cart" element={<Cart items={cart} itemdelete={deleteItem} emptycart={EmptyCart } />}></Route>
               </Routes>
           </BrowserRouter>
+      <Register />
       <Footer />
     </div>
   );

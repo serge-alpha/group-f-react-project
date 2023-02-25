@@ -22,6 +22,16 @@ code {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
+.root{
+    
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem  rgba(205,202,202,0.5)
+
+}
+
+
 
 .app {
   display: grid;
@@ -301,6 +311,7 @@ input::placeholder {
 }
 
 /* PRODUCTS ENDS HERE */
+
 /*CART STARTS HERE*/
 .cart {
   display: flex;
@@ -381,6 +392,96 @@ input::placeholder {
   width: 10rem;
 }
 /*CART ENDS HERE*/
+
+
+/* Register starts here */
+
+.form-control label{
+  flex: 0.1;
+  text-align: left;
+  
+}
+.form-control input, textarea{
+ flex: 0.9;
+ padding: var(--padding);
+ border: 1px solid;
+ width: 30rem;
+ border-radius: 0.5rem;
+
+} 
+.form-control textarea{
+  resize: none;
+  height: 12vh;
+ 
+}
+.form-control{
+  color: #fff;
+  font-size: 1.6rem;
+  color: #14445e; 
+}
+.form-btn-field{
+  border-radius: var(--border-radius);
+}
+/* .resarvation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 60vh;
+}
+.resarvation .card{
+ width: 30rem;
+} */
+.form{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 60vh;
+  
+}
+.contact .card{
+  width: 30rem;
+  
+  
+}
+.contact h2{
+  color:#2596be;
+  text-decoration: solid;
+  font-size: 4rem;
+  margin-top: 2rem;
+  font-weight: 800;
+}
+
+.btn{
+  width: 30rem;
+  border-radius: 0.5rem;
+  color: #2596be;
+  background-color: #14445e;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Register ends here */
+
 /* FOOTER STARTS HERE */
 
 .App__footer {
