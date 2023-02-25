@@ -4,7 +4,7 @@ import Product from "./Product";
 const Products = (props) => {
   const [filter, setFilter] = useState("");
 
-  const { products } = props;
+  const { products, cartItem } = props;
   return (
     <div>
       <div className="slider">
@@ -29,10 +29,11 @@ const Products = (props) => {
             title.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
           )
           .map((product) => (
-            <Product key={product.id} product={product} />
+            <Product key={product.id} product={product} cartItem={cartItem} />
           ))}
       </section>
     </div>
+
   );
 };
 

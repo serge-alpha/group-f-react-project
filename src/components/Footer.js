@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <footer>
       <div className="App__footer">
-        <section class="footer__section">
+        <section className="footer__section">
           <h1>Company Name</h1>
-          <div class="footer__colm">
+          <div className="footer__colm">
             <h3>PRODUCTS</h3>
-            <span class="colm__row">
+            <span className="colm__row">
               <img src="2.jpg" alt="" className="row__img" />
-              <span classNmae="row__details">
+              <span className="row__details">
                 <h3>Title</h3>
                 <p>Price</p>
               </span>
@@ -40,7 +40,7 @@ const Footer = () => {
               </span>
             </span>
             <span className="colm__row">
-              <img src="2.jpg" alt="" class="row__img" />
+              <img src="2.jpg" alt="" className="row__img" />
               <span className="row__details">
                 <h3>Title</h3>
                 <p>Price</p>
@@ -63,9 +63,9 @@ const Footer = () => {
                 name="email"
                 id="email"
                 placeholder="Enter Email"
-                required="true"
+                required
               />
-              <button type="submit" class="btn">
+              <button type="submit" className="btn">
                 SUBSCRIBE
               </button>
             </form>
@@ -75,22 +75,22 @@ const Footer = () => {
           <ul>
             <li>
               <h5>
-                <a href="#">HOME |</a>
+                <a href="/">HOME |</a>
               </h5>
             </li>
             <li>
               <h5>
-                <a href="#">FAQs |</a>
+                <a href="/">FAQs |</a>
               </h5>
             </li>
             <li>
               <h5>
-                <a href="#">TERMS AND CONDITIONS |</a>
+                <a href="/">TERMS AND CONDITIONS |</a>
               </h5>
             </li>
             <li>
               <h5>
-                <a href="#">POLICIES |</a>
+                <a href="/">POLICIES |</a>
               </h5>
             </li>
           </ul>
