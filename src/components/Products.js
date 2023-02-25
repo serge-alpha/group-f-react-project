@@ -8,7 +8,7 @@ const Products = (props) => {
   return (
     <div>
       <div className="slider">
-        <label for="search" className="label"></label>
+        <label htmlFor="search" className="label"></label>
         <input
           type="search"
           name="name"

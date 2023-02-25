@@ -13,10 +13,11 @@ const Navbar = ({ items }) => {
     <div className="navbar">
       <div className="navbar__top">
         <h1>Amaze Fashion</h1>
-        <div className="navbar__topDetails">
+              <div className="navbar__topDetails">
+         <Link id="cart__link" to="/register" src="/">
           <IconContext.Provider value={{ className: "nav__icon1" }}>
-            <TbUser />
-          </IconContext.Provider>
+                          <TbUser />
+                      </IconContext.Provider></Link>
           <Link id="cart__link" to="/cart" src="/">
             <span className="navbar__cartDetails">
               <IconContext.Provider value={{ className: "nav__icon" }}>
@@ -44,7 +45,7 @@ const Navbar = ({ items }) => {
           </li>
           <li className="nav__link">
             <Link id="nav__link" to="/">
-              Register
+             About Us
             </Link>
           </li>
         </ul>
