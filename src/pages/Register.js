@@ -1,36 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Register = ({ userinfo }) => {
+    const [info, setInfo] = useState({
+        name: '',
+        password: '',
+        email: '',
+        messege:'',
+    });
+    const navigate = useNavigate();
+    const handleInfo = (event) => {
+        setInfo((previnfo) => { return { ...previnfo, [event.target.name]: event.target.value } });
+    }
+    const Userdata = () => {
+        userinfo(info);
+        navigate('/');
+    }
+   
   return (
     <div>
            <section class="contact">
     <h2 class="section-title text-center">Register Here</h2>
-    <div class="card">
-        <form action="" class="form">
+              <div class="card">
+                  <form action="" class="form" onSubmit={Userdata }>
             <div class="form-control flex-center">
-                <label for="name">Name</label>
-                <input type="text" id="name" required autocomplete="name"/>
+                          <label htmlFor="name">Name</label>
+                          <input type="text" id="name" required autocomplete="name" onChange={handleInfo } name='name' />
             </div>
      
             <div class="form-control flex-center">
-                <label for="name">Contact Details</label>
-                <input type="text" id="name" required autocomplete="name"/>
+                <label htmlFor="name">Password</label>
+                          <input type="password" id="name" required autocomplete="name" onChange={handleInfo} name="password" />
             </div>
     
             <div class="form-control flex-center">
-                <label for="email">Email </label>
-                <input type="text" id="name" required autocomplete="name"/>
-                    
-               
+                          <label htmlFor="email">Email </label>
+                          <input type="email" id="name" required autocomplete="name" onChange={handleInfo} name='email' />
             </div>
         
-                 <div class="form-control flex-center">
-                        <label for="name">Message</label>
-                        <input type="message" id="message"/>
-                      
+                 <div class="form-control flex-center">               
                        </div>
                        <div class="form-control flex-center">
-                        <button class="btn">Submit</button>
+                          <button type='submit' class="submit__btn">Submit</button>
                           
                   </div>
             </form>

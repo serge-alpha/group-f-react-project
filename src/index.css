@@ -457,18 +457,18 @@ input::placeholder {
   
 }
 .contact h2{
-  color:#2596be;
+  color:var(--box-shadow);
   text-decoration: solid;
   font-size: 4rem;
   margin-top: 2rem;
   font-weight: 800;
 }
 
-.btn{
+.submit__btn{
   width: 30rem;
   border-radius: 0.5rem;
-  color: #2596be;
-  background-color: #14445e;
+  color: var(--bodycolor);
+  background-color: var(--footer);
   font-size: 1.5rem;
   cursor: pointer;
 }
