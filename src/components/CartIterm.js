@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CartIterm = (props) => {
   const { item, Delete } = props;
+
+  const [count, setCount] = useState(1);
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  const handleDecrement = () => {
+    setCount(count - 1);
+  };
 
   return (
     <div className="cart__item">
@@ -11,9 +19,17 @@ const CartIterm = (props) => {
         <p>{item.price}</p>
         <div className="cart__funtions">
           <span className="item__amount">
-            <button className="item__btnIncrease">-</button>
-            <p>{item.amount}</p>
-            <button className="item__btnDecrease">+</button>
+            <button
+              disabled={count <= 0}
+              className="item__btnIncrease"
+              onClick={handleDecrement}
+            >
+              -
+            </button>
+            <p>{count}</p>
+            <button className="item__btnDecrease" onClick={handleIncrement}>
+              +
+            </button>
           </span>
           <button
             className="item__delete"

@@ -13,18 +13,19 @@ const Navbar = ({ items }) => {
     <div className="navbar">
       <div className="navbar__top">
         <h1>Amaze Fashion</h1>
-              <div className="navbar__topDetails">
-         <Link id="cart__link" to="/register" src="/">
-          <IconContext.Provider value={{ className: "nav__icon1" }}>
-                          <TbUser />
-                      </IconContext.Provider></Link>
+        <div className="navbar__topDetails">
+          <Link id="cart__link" to="/register" src="/">
+            <IconContext.Provider value={{ className: "nav__icon1" }}>
+              <TbUser />
+            </IconContext.Provider>
+          </Link>
           <Link id="cart__link" to="/cart" src="/">
             <span className="navbar__cartDetails">
               <IconContext.Provider value={{ className: "nav__icon" }}>
                 <TbShoppingCart />
               </IconContext.Provider>
-              <span>
-                <h4>{items.length}Iterm</h4>
+              <span className="navbar__details">
+                <h4>{items.length} Item</h4>
                 <h3>${sum}</h3>
               </span>
             </span>
@@ -45,7 +46,7 @@ const Navbar = ({ items }) => {
           </li>
           <li className="nav__link">
             <Link id="nav__link" to="/">
-             About Us
+              About Us
             </Link>
           </li>
         </ul>

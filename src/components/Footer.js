@@ -123,7 +123,7 @@ const Footer = () => {
         </section>
         <section className="dev__info">
           <h6>
-            <i class="fa-regular fa-copyright"></i> 2023 CREATED BY //RANDOM
+            <i className="fa-regular fa-copyright"></i> 2023 CREATED BY //RANDOM
             TEXT WHICH WILL BE ADDED IN FUTURE AN SO ON
           </h6>
         </section>
