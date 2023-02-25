@@ -6,7 +6,9 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
+import LoadingSpin from "./components/LoadingSpin";
 import Home from "./components/Home";
+
 
 const App = () => {
     
