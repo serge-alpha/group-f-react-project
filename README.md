@@ -1,10 +1,10 @@
 # Project Info
 
-> This project is our first "group" assignment from Integrify.
+## **This project is our first "group" assignment from Integrify.**
 
 We planned to build an E-commerce website using React for the very first time.
 
-> Some of the things we learned and practiced during this project
+> _Some of the things we learned and practiced during this project_
 
 - components
 - props
@@ -18,14 +18,14 @@ We planned to build an E-commerce website using React for the very first time.
 
 ---
 
-## Members
+### Members
 
-    * Sukla Poddar
-    * Serge Alpha
-    * Mercedesz Torok
+    Sukla Poddar
+    Serge Alpha
+    Mercedesz Torok
 
 ---
 
-This is the beginning to fell in love with React :)
+_This is the beginning to fell in love with React :)_
 
-!(https://i.postimg.cc/Bn82nSqL/Screenshot-56.png)
+![React] (https://i.postimg.cc/Bn82nSqL/Screenshot-56.png)
