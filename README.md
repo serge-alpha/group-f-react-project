@@ -26,6 +26,6 @@ We planned to build an E-commerce website using React for the very first time.
 
 ---
 
-_This is the beginning to fell in love with React :)_
+_This is the beginning how we fell in love with React :)_
 
-![React] ("./photo/Screenshot_56.png")
+![React]("https://i.postimg.cc/Bn82nSqL/Screenshot-56.png")
