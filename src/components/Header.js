@@ -8,7 +8,7 @@ const Header = () => {
           <img src="" alt="" className="header__image" />
           <div className="centered">
             <h1 className="title">Amaze Fashion</h1>
-            <h3 className="title">'Fashion Fades,Style is Eternal'</h3>
+            <h3 className="title">'Fashion Fades, Style is Eternal'</h3>
           </div>
         </div>
       </section>
