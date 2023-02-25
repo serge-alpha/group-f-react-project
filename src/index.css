@@ -248,69 +248,67 @@ input:focus {
 /* PRODUCTS ENDS HERE */
 /*CART STARTS HERE*/
 .cart {
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-    margin: 2rem auto;
-    background-color: ghostwhite;
-    width: 60vw;
-    border-radius: 4px;
-    padding: 4rem;
-    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  background-color: ghostwhite;
+  width: 60vw;
+  border-radius: 4px;
+  padding: 4rem;
+  min-height: 80vh;
 }
 
 .cart__item {
-    background-color: white;
-    padding: 1rem;
-    display: grid;
-    width: 100%;
-    justify-content:start;
-    gap:2rem;
-    grid-template-columns: auto auto;
-    height: fit-content;
-    border-radius: 9px;
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  width: 100%;
+  justify-content: start;
+  gap: 2rem;
+  grid-template-columns: auto auto;
+  height: fit-content;
+  border-radius: 9px;
 }
 
 .item__img {
-    width: 8rem;
-    height: 8.5rem;
-    object-fit: scale-down;
-    padding: 0;
-    float:left;
-}
-.item__details{
-    
-}
-.item__amount {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    width: 10rem;
+  width: 8rem;
+  height: 8.5rem;
+  object-fit: scale-down;
+  padding: 0;
+  float: left;
 }
 
- .item__amount > p {
-        background-color: navajowhite;
-    }
-.cart__funtions {
-    display: flex;
-    justify-content: flex-start;
-    gap:5rem;
+.item__amount {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 10rem;
 }
-.cart__funtions >button{
-    background-color:transparent;
-    border:none;
+
+.item__amount > p {
+  background-color: navajowhite;
+}
+.cart__funtions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+.cart__funtions > button {
+  background-color: transparent;
+  border: none;
 }
 .item__btnDecrease {
-    border: none;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
+  border: none;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .item__btnIncrease {
-    border: none;
-    border-bottom-left-radius: 1rem;
-    border-top-left-radius: 1rem;
+  border: none;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 /*CART ENDS HERE*/
 /* FOOTER STARTS HERE */
@@ -386,6 +384,9 @@ h5 {
   justify-content: center;
   margin: 1rem;
   text-align: center;
+}
+.footer_product_title {
+  font-size: 14px;
 }
 
 /* FOOTER ENDS HERE */
