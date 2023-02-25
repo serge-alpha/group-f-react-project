@@ -28,4 +28,4 @@ We planned to build an E-commerce website using React for the very first time.
 
 _This is the beginning how we fell in love with React :)_
 
-![React]("https://i.postimg.cc/Bn82nSqL/Screenshot-56.png")
+![React]("https://i.postimg.cc/SKbL1n9L/Screenshot-57.png")
