@@ -1,7 +1,5 @@
-import React, {useState,useEffect} from 'react'
-
-
-
+import React, { useState, useEffect } from "react";
+import LoadingSpin from "../components/LoadingSpin";
 
 // import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
@@ -36,12 +34,10 @@ const Home = () => {
   }, []);
   return (
     <div className="app">
-      
-      {isLoading && <p>the products are loading...</p>}
       {error ? <p>{error}</p> : <Products products={products} />}
-     
+      {isLoading && <LoadingSpin />}
     </div>
-  )
+  );
 };
 
-export default Home
+export default Home;

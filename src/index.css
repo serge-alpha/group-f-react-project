@@ -82,6 +82,7 @@ nav {
   box-shadow: 0px 2px 5px;
   border-radius: 4px;
   padding: 2rem 4rem;
+  font-size: 20px;
 }
 .navbar__top {
   display: flex;
@@ -102,8 +103,12 @@ nav {
   display: flex;
   align-items: center;
   grid-gap: 2rem;
-  width: 9rem;
+  width: 10rem;
   margin: 1rem;
+}
+.navbar__details {
+  width: 7rem;
+  font-size: 20px;
 }
 .nav__icon1 {
   width: 5rem;
@@ -176,11 +181,13 @@ nav {
 input[type="search"] {
   padding: 17px;
 }
+
 input:focus {
   outline: none;
 }
 input::placeholder {
   font-size: 1rem;
+  padding: 0rem;
 }
 
 .slider__search {
@@ -248,7 +255,9 @@ input::placeholder {
 
 .product__btn,
 .item__delete,
-.pay__btn {
+.pay__btn,
+.add__btn,
+.submit__btn {
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
@@ -314,7 +323,6 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
   justify-content: center;
   margin: 2rem auto;
   background-color: var(--bodycolor);
@@ -344,14 +352,22 @@ input::placeholder {
   float: left;
 }
 .item__delete {
-  left: 90%;
+  left: 80%;
+  position: absolute;
 }
 
 .item__delete:hover,
-.pay__btn:hover {
+.pay__btn:hover,
+.add__btn:hover,
+.submit__btn:hover {
   color: var(--footer);
-  outline: 2px solid var(--footer);
+  outline: 2px solid var(--bars);
   box-shadow: 4px 5px 17px -4px #323232;
+  background-color: var(--bars);
+}
+.submit__btn:hover {
+  background-color: var(--bodycolor);
+  outline: 2px solid var(--footer);
 }
 
 .item__amount {
@@ -367,11 +383,16 @@ input::placeholder {
 .item__amount > p {
   background-color: var(--bars);
   border-radius: 2rem;
+  width: 3rem;
+  padding: 0.8rem;
+  height: 3rem;
+  font-size: 16px;
 }
 .cart__funtions {
   display: flex;
   justify-content: flex-start;
   gap: 5rem;
+  font-weight: bold;
 }
 
 .item__btnDecrease {
@@ -379,6 +400,8 @@ input::placeholder {
   /* border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem; */
   border-radius: 2rem;
+  width: 3rem;
+  font-size: 16px;
 }
 
 .item__btnIncrease {
@@ -386,6 +409,8 @@ input::placeholder {
   /* border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem; */
   border-radius: 2rem;
+  width: 3rem;
+  font-size: 16px;
 }
 .pay__btn {
   background-color: var(--bars);
@@ -410,15 +435,13 @@ textarea {
   border: 1px solid;
   width: 30rem;
   border-radius: 0.5rem;
+  padding: 17px;
 }
-.form-control textarea {
-  resize: none;
-  height: 12vh;
-}
+
 .form-control {
   color: #fff;
   font-size: 1.6rem;
-  color: #14445e;
+  color: var(--footer);
 }
 .form-btn-field {
   border-radius: var(--border-radius);
@@ -449,28 +472,29 @@ textarea {
   align-items: center;
   gap: 3rem;
   min-height: 60vh;
+  margin: 5rem 0rem;
 }
 .contact .card {
   width: 30rem;
 }
 
-.contact h2{
-  color:var(--box-shadow);
+.contact h2 {
+  color: var(--box-shadow);
   text-decoration: solid;
   font-size: 4rem;
   margin-top: 2rem;
   font-weight: 800;
 }
 
-
-.submit__btn{
+.submit__btn {
   width: 30rem;
   border-radius: 0.5rem;
-  color: var(--bodycolor);
   background-color: var(--footer);
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
-} 
+  letter-spacing: 0.2rem;
+}
 
 /* Register ends here */
 
