@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import "./App.css";
 import "./index.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Products from "./components/Products";
-import Header from "./components/Header";
-// import Slider from "./components/Slider";
 import Cart from "./components/Cart";
 import LoadingSpin from "./components/LoadingSpin";
+import Home from "./components/Home";
 
 
 const App = () => {
@@ -17,15 +16,16 @@ const App = () => {
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [cart, setCart] = useState([]);
-    const AddToCart = (id) => {
-        console.log(id);
-        //console.log(cart);
+    const AddToCart = (id) => {       
         const itemToAdd = products.find((item) => {return item.id === id });
         setCart((prevItems) => {return [...prevItems, itemToAdd] });
     }
     const deleteItem = (id) => {
         const itemsLeft = cart.filter((item) => { return item.id !== id });
         setCart(itemsLeft);
+    }
+    const EmptyCart = () => {
+        setCart([]);
     }
     
   useEffect(() => {
@@ -51,15 +51,13 @@ const App = () => {
     
   return (
     <div className="app">
-      <Navbar />
-      <Header />
-
-       {/* <Slider /> */}
-          {isLoading && <p>the products are loading...</p>}
-          {error ? <p>{error}</p> : <Products products={products} cartItem={AddToCart}  />}
-          {isLoading && <LoadingSpin />}
-          <Cart items={cart} itemdelete={deleteItem}/>
-
+          <BrowserRouter>
+              <Navbar items={cart }/>
+              <Routes>
+                  <Route path="/" element={<Home error={error} isLoading={isLoading} products={products} cartItem={AddToCart}  />}></Route>
+                  <Route path="/cart" element={<Cart items={cart} itemdelete={deleteItem} emptycart={EmptyCart } />}></Route>
+              </Routes>
+          </BrowserRouter>
       <Footer />
     </div>
   );
