@@ -1,13 +1,12 @@
 import React from "react";
 import Product from "./Product";
-import Slider from "./Slider";
 
 const Products = (props) => {
-  const { products } = props;
+  const { products,cartItem } = props;
   return (
     <section className="products">
-      {products.map((product) => (
-        <Product key={product.id} product={product} />
+          {products.map((product) => (
+              <Product key={product.id} product={product} cartItem={cartItem} />
       ))}
     </section>
   );
