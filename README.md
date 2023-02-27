@@ -28,8 +28,10 @@ We planned to build an E-commerce website using React for the very first time.
 
 ### Demo links
 
-    Video: [a link](https://files.fm/u/db5xn6vt9#/view/wtesbh52g)
-    Netlify: [a link](https://superb-praline-ea0592.netlify.app/)
+    Video:
+    [a link](https://files.fm/u/db5xn6vt9#/view/wtesbh52g)
+    Netlify:
+    [a link](https://superb-praline-ea0592.netlify.app/)
 
 _This is the beginning how we fell in love with React :)_
 
