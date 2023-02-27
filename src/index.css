@@ -696,16 +696,21 @@ h5 {
   }
   .product {
     flex-direction: row;
-    height: 30rem;
+    height: 20rem;
+    padding-top: 4rem;
   }
   .product__desc {
-    overflow: initial;
+    overflow: hidden;
     height: 80%;
   }
   .nav__link {
     padding-top: 2rem;
   }
   .nav__links {
-    gap: 2rem;
+    font-size: 16px;
+    gap: 1rem;
+  }
+  .product__img {
+    align-self: flex-start;
   }
 }
