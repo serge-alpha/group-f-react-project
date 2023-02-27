@@ -26,13 +26,9 @@ We planned to build an E-commerce website using React for the very first time.
 
 ---
 
-### Demo links
+##[Click here to see the demo video](https://files.fm/u/db5xn6vt9#/view/wtesbh52g)
 
-    Video:
-    [a link](https://files.fm/u/db5xn6vt9#/view/wtesbh52g)
-    Netlify:
-    [a link](https://superb-praline-ea0592.netlify.app/)
-    <a href="https://www.google.com/" target="_blank">Google</a>
+##[Click here for the Netlify link](https://superb-praline-ea0592.netlify.app/)
 
 _This is the beginning how we fell in love with React :)_
 
