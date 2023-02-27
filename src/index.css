@@ -704,4 +704,14 @@ h5 {
         overflow:initial;
         height:80%;
     }
+    .nav__link{
+        margin:2rem;
+    }
+    .cart__item{
+        display:flex;
+        flex-direction:column;
+    }
+    .cartImage{
+        width:inherit;
+    }
 }
