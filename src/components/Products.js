@@ -28,12 +28,12 @@ const Products = (props) => {
           .filter(({ title }) =>
             title.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
           )
+          .slice(0, 19)
           .map((product) => (
             <Product key={product.id} product={product} cartItem={cartItem} />
           ))}
       </section>
     </div>
-
   );
 };
 
