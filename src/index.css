@@ -714,12 +714,32 @@ h5 {
   .product__img {
     align-self: flex-start;
   }
-    .cart__item{
-        display:flex;
-        flex-direction:column;
-    }
-    .cartImage{
-        width:inherit;
-    }
-
+  .cart__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+  }
+  .item__details {
+    padding: 1rem;
+  }
+  .item__price {
+    font-size: 20px;
+  }
+  .cartImage {
+    /* width: inherit; */
+  }
+  .cart__image__empty {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .bottom__link {
+    padding: 1rem 0rem;
+  }
+  .li,
+  a,
+  h5 {
+    padding: 0.1rem;
+  }
 }

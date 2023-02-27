@@ -16,7 +16,7 @@ const CartIterm = (props) => {
       <img src={item.image} alt="" className="item__img" />
       <span className="item__details">
         <h3>{item.title}</h3>
-        <p>{item.price}</p>
+        <p className="item__price">${item.price}</p>
         <div className="cart__funtions">
           <span className="item__amount">
             <button
