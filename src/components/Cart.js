@@ -7,8 +7,9 @@ const Cart = (props) => {
 
   const cartImage = (
     <img
-          src="https://i.postimg.cc/9MbrsRys/pngaaa-com-5034319.png"
-          alt="empty cart"
+      className="cart__image__empty"
+      src="https://i.postimg.cc/9MbrsRys/pngaaa-com-5034319.png"
+      alt="empty cart"
     />
   );
   let sum = 0;
