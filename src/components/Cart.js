@@ -7,6 +7,7 @@ const Cart = (props) => {
 
   const cartImage = (
     <img
+      className="cart__image__empty"
       src="https://i.postimg.cc/9MbrsRys/pngaaa-com-5034319.png"
       alt="empty cart"
     />
@@ -28,7 +29,7 @@ const Cart = (props) => {
   return (
     <section className="cart">
       <h1>Cart ( {items.length} )</h1>
-      {items.length === 0 ? <h1>{pay}</h1> : Items}
+      {items.length === 0 ? <h1 className="cartImage">{pay}</h1> : Items}
       <h2>Total: ${sum}</h2>
       {items.length === 0 ? (
         <Link to="/">
