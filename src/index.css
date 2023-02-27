@@ -111,8 +111,8 @@ nav {
   font-size: 20px;
 }
 .nav__icon1 {
-  width: 5rem;
-  height: 4rem;
+  width: 4rem;
+  height: 3rem;
   object-fit: scale-down;
   padding: 0;
   margin-right: 3rem;
@@ -120,8 +120,8 @@ nav {
   float: left;
 }
 .nav__icon {
-  width: 6rem;
-  height: 6.5rem;
+  width: 5rem;
+  height: 3rem;
   object-fit: scale-down;
   padding: 0;
   float: left;
@@ -131,7 +131,8 @@ nav {
   cursor: pointer;
   /* color: aliceblue; */
   font-size: larger;
-  text-align: center;
+  align-content: center;
+  justify-content:center;
   gap: 4rem;
 }
 #nav__link {
@@ -139,7 +140,7 @@ nav {
 }
 
 .nav__link {
-  padding: 0.5rem;
+  padding: 1rem;
   gap: 0.5rem;
 }
 .nav__link:hover {
@@ -212,6 +213,7 @@ input::placeholder {
   border-radius: 0.6rem;
   font-size: 0.8rem;
   display: flex;
+  width:100%;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
@@ -241,6 +243,7 @@ input::placeholder {
 
 .product__desc {
   overflow: hidden;
+  height:4rem;
 }
 .products {
   display: grid;
@@ -335,7 +338,7 @@ input::placeholder {
   background-color: var(--cards);
   padding: 1rem;
   display: grid;
-  width: 100%;
+  /*width: fit-content;*/
   justify-content: start;
   gap: 2rem;
   grid-template-columns: auto auto;
@@ -586,7 +589,11 @@ h5 {
 
 /* FOOTER ENDS HERE */
 /* RESPONSIVNESS BELOW */
-
+@media screen and (max-width:1800px) {
+    .products {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
 @media screen and (max-width: 1200px) {
   .footer__section {
     display: grid;
@@ -628,7 +635,22 @@ h5 {
     grid-column: 1 / span 2;
     margin-bottom: 3rem;
   }
+  .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+ 
+    .item__delete {
+        
+        position: initial;
+    }
+    .cart__funtions {
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
 }
+
 @media screen and (max-width: 930px) {
   .slider {
     /* grid-area: slide; */
@@ -643,4 +665,43 @@ h5 {
     border-radius: 0px;
     padding: 2rem 4rem;
   }
+    nav {
+        width: 100%;
+        height: 2rem;
+        padding-top: 1rem;
+        margin: 0rem;
+        top:2rem;           
+        border-radius: 0px;     
+        font-size: 15px;
+    }
+    .nav__icon1 {
+        width: 3rem;
+        height: 2rem;    
+    }
+    .nav__icon {
+        width: 2rem;
+        height: 2.5rem;   
+       
+    }
+    .navbar__details {
+        width: 5rem;
+        font-size: 15px;
+        border-right:1px solid black;
+    }
+    .navbar__top>h1{
+        display:none;
+    }
+    .products {
+        grid-template-columns: repeat(1, minmax(0, 1fr));  
+        margin:auto;
+        align-content:center;
+    }
+    .product {
+        flex-direction:row;
+        height:30rem;
+    }
+    .product__desc{
+        overflow:initial;
+        height:80%;
+    }
 }
